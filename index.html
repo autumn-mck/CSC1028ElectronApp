@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+		<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src http://localhost:*;" />
+		<meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src http://localhost:*;" />
+		<title>Hello World!</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a href="" class="nav-current">Query URL</a>
+				<a href="">Tab1</a>
+				<a href="">Tab2</a>
+				<a href="">Tab3</a>
+			</nav>
+		</header>
+
+		<main>
+			<p>
+				<label>URL</label><br />
+				<input type="text" id="url" value="qub.ac.uk" /><br />
+				<button id="query">Query</button>
+			</p>
+
+			<div id="table"></div>
+
+			<p id="rawJson"></p>
+
+			<script nonce="1028ElectronMain" src="./renderer.js"></script>
+		</main>
+	</body>
+</html>
