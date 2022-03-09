@@ -46,6 +46,7 @@ async function fetchExtHostnameData(hostname) {
 			queryAndTable(`${apiUrl}:10132/${hostname}`, "DNS Data"),
 			queryAndTable(`${apiUrl}:10133/${hostname}`, "Earliest archive date"),
 			queryAndTable(`${apiUrl}:10135/${hostname}`, "Subdomains"),
+			queryAndTable(`${apiUrl}:10136/${hostname}`, "StackShare"),
 		]);
 	return {
 		similarweb: similarweb,
